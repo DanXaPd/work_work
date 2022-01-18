@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    /*font-family: 'Fruktur', cursive;*/
+    font-size: 40px;
+}
+.subtitle{
+    text-align: center;
+    /*font-family: 'Fruktur', cursive;*/
+    font-size: 17px;
+    color: darkblue;
+}
+.level_1{
+    width: 100%;
+    /*height: 300px;*/
+}
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+}
+.level_1_main{
+    width: 100%;
+    border-radius: 20px;
+    -webkit-box-shadow: 11px 1px 15px 9px #000000; 
+    box-shadow: 11px 1px 15px 9px #000000;
+    margin: 100px 0;
+    height: 500px;
+    background-color: rgb(156, 156, 156);
+}
+.level_1_main h2{
+    margin-left: 50px;
+    /*font-family: 'Fruktur', cursive;*/
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.start_lessons{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 30px 30px;
+    -webkit-box-shadow: 11px 1px 15px 9px #000000; 
+    box-shadow: 11px 1px 15px 9px #000000;
+    border-radius: 25px;
+    position: relative;
+    background-color: white;
+}
+.start_lessons h3{
+    margin-left: 30px;
+    /*font-family: 'Fruktur', cursive;*/
+}
+.bottom{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 25px;
+}
+.bottom h6{
+    font-size: 13px;
+    /*font-family: 'Fruktur', cursive;*/
+}
+.bottom a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 7px 3px;
+    color: black;
+}
+.bottom a:hover{
+    background-color: cornflowerblue;
+}
+input{
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+input::before{
+    content:"";
+    position: fixed;
+    background: url(./img/depositphotos_4548401-stock-photo-symbol-of-yin-and-yang.jpg) no-repeat;
+    background-size:cover ;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    right: 10%;
+    top: 10px;
+    cursor: pointer;
+}
+input:checked + .global .level_1_main{
+    background: url(./img/astronomy-space-4k-eg.jpg);
+    background-size: cover;
+    color: rgb(255, 0, 0);
+    font-family: 'Fruktur', cursive;
+}
+input:checked + .global .level_1_main .start_lessons{
+    background-color: rgba(255, 255, 255, 0.705);
+}
+input:checked + .global .level_1_main h6{
+    color: blue;
+    font-family: 'Fruktur', cursive;
+}
+input:checked + .conteiner h2{
+    font-family: 'Fruktur', cursive;
+}
+input:checked + .level_1 p{
+    font-family: 'Fruktur', cursive;
+}
+input:checked + .level_1 .box{
+    background-color: black;
+    border: 1px solid white;
+}
+input:checked + .global{
+    background: url(./img/Ir9.gif);
+}
+input:checked + .global h1{
+    color: red;
+    font-family: 'Fruktur', cursive;
+}
+input:checked + .global p{
+    color: blue;
+    font-family: 'Fruktur', cursive;
+}
